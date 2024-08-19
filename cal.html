@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assessment</title>
+    <link rel="stylesheet" href="./add.css">
+</head>
+<body>
+    <div class="container">
+       
+
+        <!-- Task 1: Simple Calculator -->
+        <section class="task-section calculator-section">
+            <h2>Simple Calculator</h2>
+            <input type="text" id="calc-display" disabled>
+            <div class="button-group">
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="deleteLastCharacter()">⌫</button>
+                <button onclick="appendToDisplay('%')">%</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('*')">×</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <hr>
+
+        <!-- Task 2: Array Operations -->
+        <div class="task-section array-section">
+            <h2>Array Operations</h2>
+            <label for="array-input">Enter an array of numbers (comma-separated):</label>
+            <input type="text" id="array-input">
+            <button onclick="handleArrayInput()">Calculate Sum of Evens</button>
+            <p>Sum of all even numbers:</p>
+            <p id="array-result"></p>
+        </div>
+<br> 
+<hr>
+<br>
+        <!-- Task 3: Object Manipulation -->
+        <div class="task-section object-section">
+            <h2>Object Manipulation</h2>
+            <input type="text" id="firstName" placeholder="Enter first name">
+            <input type="text" id="lastName" placeholder="Enter last name">
+            <input type="number" id="ageInput" placeholder="Enter age">
+            <input type="number" id="incrementInput" placeholder="Enter years to increment">
+            <button onclick="updatePerson()">Update Person</button>
+            <p id="fullName"></p>
+            <p id="age"></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

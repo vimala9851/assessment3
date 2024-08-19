@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: black; /* Background color updated to black */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: lightblue; /* Header color updated to light blue */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: lightblue; /* Section header color updated to light blue */
+}
+
+.task-section {
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #009688; /* Button background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00695c; /* Button hover background color */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #80cbc4; /* Light teal border */
+    text-align: left;
+}
+
+input[type="text"]:disabled {
+    background-color: #e0f2f1; /* Disabled input background color */
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: left;
+    color: lightblue; /* Label color */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+    color: lightblue; /* Text color for paragraphs */
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.array-section p,
+.object-section p {
+    text-align: center;
+    color: lightblue; /* Text color for sections */
+}
